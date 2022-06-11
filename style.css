@@ -3,6 +3,7 @@
     margin:0;
     box-sizing:border-box;
     font-family: 'Roboto', sans-serif;
+    background-color: aquamarine;
 }
 
 header {
@@ -24,15 +25,12 @@ input {
 }
 
 main {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform:translate(-50%,-50%);
     display: flex;
-    width: 80%;
-    flex-direction: row;
+    width: 100%;
+    flex-direction:column;
     align-items: center;
-    justify-content: space-around;
+    justify-content: center;
+
 }
 
 .today {
@@ -44,4 +42,21 @@ main {
 
 p {
     margin: 20px 0px;
+}
+.left {
+    width: 45%;
+}
+
+.right {
+    display: grid;
+    width: 100%;
+    background-color: rgb(27, 177, 16);
+    grid-gap: 10px;
+    border-radius: 10px;
+    grid-template-columns: repeat(auto-fill, minmax(200px , 1fr))
+}
+
+.days {
+    border-radius: 4px;
+    padding:10px 15px;
 }
