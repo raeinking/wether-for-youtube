@@ -35,22 +35,34 @@ main {
 
 .today {
     padding:10px 15px;
-    background-color:rgba(199, 95, 95, 0.567);
     border-radius: 4px;
     min-width: 200px;
+    margin: 3rem 0 ;
+    background-color:rgba(0, 0, 0, 0.238);
+    margin:3rem 10px;
 }
 
 p {
     margin: 20px 0px;
+    background-color:transparent;
+    
 }
 .left {
-    width: 45%;
+    width: 100%;
+    min-width:300px;
+    max-width:408px;
+}
+.right{
+    width: 80%;
+    display: flex;
+    align-items: center;
 }
 
-.right {
+.fdays {
     display: grid;
+    align-items: center;
     width: 100%;
-    background-color: rgb(27, 177, 16);
+    justify-content: center;
     grid-gap: 10px;
     border-radius: 10px;
     grid-template-columns: repeat(auto-fill, minmax(200px , 1fr))
@@ -59,4 +71,5 @@ p {
 .days {
     border-radius: 4px;
     padding:10px 15px;
+    background-color:rgba(0, 0, 0, 0.238);
 }
