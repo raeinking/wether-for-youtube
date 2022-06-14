@@ -3,7 +3,15 @@
     margin:0;
     box-sizing:border-box;
     font-family: 'Roboto', sans-serif;
-    background-color: aquamarine;
+    
+}
+body {
+    background-image: url('https://source.unsplash.com/random');
+    background-position: center center;
+    background-repeat:no-repeat;
+    background-size:cover;
+    background-attachment: fixed;
+    z-index: -1;
 }
 
 header {
@@ -12,9 +20,17 @@ header {
     align-items: center;
     justify-content: center;
     height: 5rem;
-    background-color: rgb(95, 49, 49);
+    background: linear-gradient(101deg, #6006B7 0%, #72ec0074 100%);
 }
-
+img {
+    min-width: 200px;
+    position: absolute;
+    right: 0;
+    top: 0;
+    z-index: -2;
+    object-fit: contain;
+    background-color:rgba(0, 0, 0, 0);
+}
 input {
     padding: 10px 15px;
     outline: none;
@@ -23,6 +39,7 @@ input {
     max-width: 500px;
     border-radius: 4px;
     z-index: 10;
+    background-color: white;
 }
 
 main {
@@ -41,17 +58,23 @@ main {
     margin: 3rem 0 ;
     background-color:rgba(0, 0, 0, 0.238);
     margin:3rem 10px;
+    position:relative;
+    z-index: 1;
 }
 
 p {
     margin: 20px 0px;
     background-color:transparent;
-    
+    z-index: 2;
 }
 .left {
     width: 100%;
     min-width:300px;
     max-width:408px;
+    height: calc(100vh - 5rem);
+    display: none;
+    flex-direction: column;
+    justify-content: center;
 }
 .right{
     width: 80%;
