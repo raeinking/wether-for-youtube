@@ -51,23 +51,6 @@ main {
     justify-content: center;
 
 }
-
-.today {
-    padding:10px 15px;
-    border-radius: 4px;
-    min-width: 200px;
-    margin: 3rem 0 ;
-    background-color:rgba(255, 255, 255, 0.708);
-    margin:3rem 10px;
-    position:relative;
-    z-index: 1;
-}
-
-p {
-    margin: 20px 0px;
-    background-color:transparent;
-    z-index: 2;
-}
 .left {
     width: 100%;
     min-width:300px;
@@ -76,4 +59,18 @@ p {
     display: none;
     flex-direction: column;
     justify-content: center;
+}
+.today {
+    padding:10px 15px;
+    border-radius: 4px;
+    min-width: 200px;
+    margin: 3rem 0 ;
+    background-color:rgba(255, 255, 255, 0.708);
+    position:relative;
+    z-index: 1;
+}
+p {
+    margin: 20px 0px;
+    background-color:transparent;
+    z-index: 2;
 }
